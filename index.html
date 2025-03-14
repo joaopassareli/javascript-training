@@ -10,9 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
 
+    <link rel="stylesheet" href="./styles.css" />
+
+  </head>
   <body>
     <main>
       <img src="./img/bag.png" alt="sacola de compras" />
@@ -23,23 +24,18 @@
           type="text"
           placeholder="Digite o item que deseja adicionar"
         />
-        <button class="button-item" id="adicionar-item" type="button">Salvar item</button>
+        <button class="button-item" id="add-item" type="button">Salvar item</button>
       </form>
 
       <div class="container-lista">
         <h2>Lista de compras</h2>
         <hr />
 
-        <ul id="lista-de-compras">
-          <li>
-            <div class="lista-item-container">
-              <input type="checkbox" id="checkbox-1" />
-              <p>Ração de gato</p>
-            </div>
-            <p class="texto-data">Segunda-feira (31/10/2022) às 08:30</p>
-          </li>
+        <ul id="shopping-list">
+          <p class="empty-list-message">Sua lista ainda não possui nenhum item!</p>
         </ul>
       </div>
     </main>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
